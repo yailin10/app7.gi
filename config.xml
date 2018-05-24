@@ -22,14 +22,6 @@
 	 <preference name="fullscreen"    value="true"/>
 	 <preference name="android-installLocation"    value="auto"/>
     <preference name="permissions"    value="INTERNET"/>
-	
-	<!--para acceder a paginas en internet-->
-	<allow-intent href="https://*/*"/>
-	<acces origin="https://*/*"/>
-	<allow-intent href="http://*/*"/>
-	<acess origin="http://*/"/>
-	<plugin name="cordova-plugin-whitelist" source="npm"/>
-	
 	<!--plugins-->
 	<!--Core plugins-->
 	<plugin name="cordova-plugin-device" spec="~1.1.4"/>
@@ -38,9 +30,18 @@
 	
 	<!--<plugin name="cordiva-plugin-geolocation" source="npm"/>-->
 	  <!--Third part plugins-->
+	
+	<!--para acceder a paginas en internet-->
+	<allow-intent href="https://*/*"/>
+	<acces origin="https://*/*"/>
+	<allow-intent href="http://*/*"/>
+	<acess origin="http://*/*"/>
+	<plugin name="cordova-plugin-whitelist" source="npm"/>
+	
+	
 	  
 	  <!--Colocar icono app-->
 	  
- <icon src="res/android/mpdi.png"/>
+ <icon src="res/android/mdpi.png"/>
  
  </widget>
